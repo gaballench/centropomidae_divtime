@@ -1,0 +1,57 @@
+begin mrbayes;
+[Script documentation carried out using comments]
+
+[log the analysis]
+log start filename=centropomidae.log;
+[read the matrix concatenated.nex]
+execute concatenated.nex;
+
+[close analysis at end]
+set autoclose=yes;
+[set Nematistius_pectoralis as "root"]
+outgroup Nematistius_pectoralis;
+[This command shows the status of all the taxa]
+taxastat;
+
+[definition of individual partitions per marker]
+charset 12S = 1-909;
+charset 16S = 910-1511;
+charset COI = 1512-2149;
+charset CYTB = 2150-2949;
+charset TMO = 2950-3446;
+
+[definition of combined dataset]
+partition combined=5: 12S, 16S, COI, CYTB, TMO;
+
+[specification of substitution models]
+set partition=combined;
+lset applyto=(1) nst=6 rates=invgamma; [GTR+I+G]
+lset applyto=(2) nst=6 rates=invgamma; [GTR+I+G]
+lset applyto=(3) nst=6 rates=invgamma; [GTR+I+G]
+lset applyto=(4) nst=6 rates=invgamma; [GTR+I+G]
+lset applyto=(5) nst=2 rates=invgamma; [K2P+I+G]
+
+[unlink parameters across partitions]
+unlink shape=(all) pinvar=(all) statefreq=(all) revmat=(all) tratio=(all);
+
+[allow separate gamma parameters for each partition and set the stationary freqs in SYM]
+prset applyto=(5) statefreqpr=fixed(equal) [K2P]
+prset applyto=(all) ratepr=variable;
+
+[show the model just specified for each partition]
+showmodel;
+
+[set up the MCMC, with this setting the analysis will need not less than 16 threads]
+mcmcp nruns=4 ngen=40000000 nchains=8 samplefreq=4000 printfreq=4000;
+[run the MCMC]
+mcmc;
+
+[summarize the posterior trees]
+sumt nruns=4 relburnin=yes burninfrac=0.50;
+plot;
+
+[summarize parameter posteriors]
+sump;
+
+log stop;
+end;
