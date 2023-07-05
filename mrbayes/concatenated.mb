@@ -18,7 +18,7 @@ charset 12S = 1-852;
 charset 16S = 853-1447;
 charset COI = 1448-2072;
 charset CYTB = 2073-2842;
-charset TMO = 2843-3338
+charset TMO = 2843-3338;
 
 [definition of combined dataset]
 partition combined=5: 12S, 16S, COI, CYTB, TMO;
