@@ -3,8 +3,8 @@ begin mrbayes;
 
 [log the analysis]
 log start filename=centropomidae.log;
-[read the matrix concatenated.nex]
-execute concatenated.nex;
+[read the matrix concatenated.nexus]
+execute concatenated.nexus;
 
 [close analysis at end]
 set autoclose=yes;
@@ -14,41 +14,42 @@ outgroup Nematistius_pectoralis;
 taxastat;
 
 [definition of individual partitions per marker]
-charset 12S = 1-852;
-charset 16S = 853-1447;
-charset COI = 1448-2072;
-charset CYTB = 2073-2842;
-charset TMO = 2843-3338;
+charset 12S = 1-832;
+charset 16S = 833-1401;
+charset COI = 1402-2015;
+charset CYTB = 2016-2797;
+charset TMO = 2798-3234;
 
 [definition of combined dataset]
 partition combined=5: 12S, 16S, COI, CYTB, TMO;
 
 [specification of substitution models]
 set partition=combined;
-lset applyto=(1) nst=6 rates=gamma; [SYM+G]
+lset applyto=(1) nst=6 rates=gamma; [GTR+I+G]
 lset applyto=(2) nst=6 rates=invgamma; [GTR+I+G]
 lset applyto=(3) nst=6 rates=invgamma; [GTR+I+G]
 lset applyto=(4) nst=6 rates=invgamma; [GTR+I+G]
-lset applyto=(5) nst=2 rates=invgamma; [K2P+I+G]
+lset applyto=(5) nst=2 rates=invgamma; [HKY+I+G]
 
 [unlink parameters across partitions]
 unlink shape=(all) pinvar=(all) statefreq=(all) revmat=(all) tratio=(all);
 
-[allow separate gamma parameters for each partition and set the stationary freqs in SYM]
-prset applyto=(1) statefreqpr=fixed(equal); [SYM in partition 1]
-prset applyto=(5) statefreqpr=fixed(equal); [K2P in partition 5]
+[allow separate gamma parameters for each partition]
 prset applyto=(all) ratepr=variable;
 
 [show the model just specified for each partition]
 showmodel;
 
 [set up the MCMC, with this setting the analysis will need not less than 16 threads]
-mcmcp nruns=4 ngen=40000000 nchains=8 samplefreq=4000 printfreq=4000;
+[We want 10000 samples per chain, but want a final 10K sample, which come from summarising 4 analyses sampling
+80G gens every 8K with 0.75 burnin each when summarising across runs: 4*((80000000/8000)/2)]
+mcmcp nruns=4 ngen=80000000 nchains=8 samplefreq=8000 printfreq=8000;
+
 [run the MCMC]
 mcmc;
 
 [summarize the posterior trees]
-sumt nruns=4 relburnin=yes burninfrac=0.50;
+sumt nruns=4 relburnin=yes burninfrac=0.75;
 plot;
 
 [summarize parameter posteriors]
