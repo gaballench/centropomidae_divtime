@@ -1,0 +1,6 @@
+12S_Edited-  GTR + I + G
+16S_Edited-  GTR + I + G
+COI_Edited-  GTR + I + G
+CYTB_Edited- GTR + I + G
+TMO_Edited-  HKY + I + G
+
