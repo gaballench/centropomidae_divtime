@@ -42,14 +42,14 @@ showmodel;
 
 [set up the MCMC, with this setting the analysis will need not less than 16 threads]
 [We want 10000 samples per chain, but want a final 10K sample, which come from summarising 4 analyses sampling
-80G gens every 8K with 0.75 burnin each when summarising across runs: 4*((80000000/8000)/2)]
-mcmcp nruns=4 ngen=80000000 nchains=8 samplefreq=8000 printfreq=8000;
+80G gens every 16K with 0.50 burnin each when summarising across runs: 4*((80000000/16000)/2)]
+mcmcp nruns=4 ngen=80000000 nchains=8 samplefreq=16000 printfreq=16000;
 
 [run the MCMC]
 mcmc;
 
 [summarize the posterior trees]
-sumt nruns=4 relburnin=yes burninfrac=0.75;
+sumt nruns=4 relburnin=yes burninfrac=0.50;
 plot;
 
 [summarize parameter posteriors]
