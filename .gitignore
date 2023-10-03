@@ -1,6 +1,9 @@
 # Wang script because it is already available form the original publication
 Wang2016_ABM_2.R
 
+# avoid tracking raw data files
+*.xlsx
+
 # History files
 .Rhistory
 .Rapp.history
