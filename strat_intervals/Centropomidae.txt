@@ -1,0 +1,31 @@
+Species	Index	Locality	Age min	Age max	Stratigraphic methods	Reference
+Centropomus sp./Basioccipital	C003	Mcgehee Farm	5.33	11.63	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp./Basioccipital	C004	Mcgehee Farm	5.33	11.63	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp. Dentary left	C012	Haile 19A	5.33	11.63		https://paleobiodb.org/
+Centropomus sp./Articular left.	C001	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp./Basioccipital; Parasphenoid	C006	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp./Ceratohyal left	C011	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp. Parasphenoid	C017	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp. Vertebra 3	C023	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp. Vomer	C025	Tiger Mine Bay	4.9	10.3 	upper beds	https://paleobiodb.org/
+Centropomus sp./Basioccipital	C007	Montbrook	3.6	11.63	Vertebrate biochrolonoly	
+Centropomus sp. Parasphenoid	C018	Montbrook	3.6	11.63	Vertebrate biochrolonoly	
+Centropomus sp. Premaxila right	C019	Nichols Mine (Mobile)	3.6	11.63		https://paleobiodb.org/
+Centropomus sp. Dentary right	C013	Nichols Mine (Mobil)	3.6	11.63		https://paleobiodb.org/
+Centropomus sp. Hyomandibular right	C027	Nichols Mine (Mobil)	3.6	11.63		https://paleobiodb.org/
+Centropomus sp. Hypural	C016	Palmetto Mine (Agrico)	3.6	5.33	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp. Vertebra	C021	Palmetto Mine (Agrico)	3.6	5.33	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp. Vertebra	C022	Palmetto Mine (Agrico)	3.6	5.33	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp. Vertebra atlas	C024	Palmetto Mine (Agrico)	3.6	5.33	Vertebrate biochrolonoly	https://paleobiodb.org/
+Centropomus sp./Basioccipital	C002	Macasphalt Shell Pit 1A	2	2.5	"Ostracode, mammal  biostratigraphy, Strontium isotope chronostratigraphy"	Jones et al. 1991
+Centropomus sp./Ceratohyal	C009	Macasphalt Shell Pit 1A	2	2.5	"Ostracode, mammal  biostratigraphy, Strontium isotope chronostratigraphy"	Jones et al. 1991
+Centropomus sp. Pterygiophore	C020	Macasphalt Shell Pit 1A	2	2.5	"Ostracode, mammal  biostratigraphy, Strontium isotope chronostratigraphy"	Jones et al. 1991
+Centropomus sp./Basioccipital	C005	Leisey Shell Pit 1A 	1.5	1.7	"Magnetostratigraphy, Strontium isotope ratios, biochronological age"	Webb 1989
+Centropomus sp./Ceratohyal	C008	Leisey Shell Pit 1A 	1.5	1.7	"Magnetostratigraphy, Strontium isotope ratios, biochronological age"	Webb 1989
+Centropomus sp. Hyomandibular right	C014	Leisey Shell Pit 1A 	1.5	1.7	"Magnetostratigraphy, Strontium isotope ratios, biochronological age"	Webb 1989
+Centropomus sp. Hypohyal right	C015	Leisey Shell Pit 1A 	1.5	1.7	"Magnetostratigraphy, Strontium isotope ratios, biochronological age"	Webb 1989
+						
+						
+						
+						
+						
