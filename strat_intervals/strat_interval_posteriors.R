@@ -81,6 +81,16 @@ sphyraenidae_params$par # meanlog and sdlog
 sphyraenidae.origin[2] # offset
 sphyraenidae.origin[c(2,3)] # min-max for init tree
 
+### fit the root calibration to a normal as the one from
+### the literature was roughly centered between 60--72Ma
+root_params <- tbea::findParams(
+                               q=c(60, mean(c(60, 72)), 72),
+                               p=c(0.025, 0.5, 0.975),
+                               pdfunction="pnorm",
+                               params=c("mean", "sd"),
+                               initVals=c(65,5))
+root_params$par # mean and sd
+
 # plot the specified calibrations using findParams
 # they all represent the desired densities
 plot(lognormalBeast(M=carangidae_params$par[1], S=carangidae_params$par[2], offset=carangidae.origin[2], meanInRealSpace=FALSE, from=0, to=150))

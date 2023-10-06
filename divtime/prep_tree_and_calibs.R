@@ -24,9 +24,10 @@ root_id <- mrca(tree)["Nematistius_pectoralis", "Sphyraena_waitii"]
 #[1]  51.900 145.626
 #> sphyraenidae.origin[c(2,3)] # min-max for init tree
 #[1] 53.05000 56.72119
+# root at 60--72 according to Natalia's reference
 calibs <- data.frame(node=c(carangidae_id, centropomidae_id, istiophoridae_id, latidae_id, sphyraenidae_id, root_id),
-                     age.min=c(51.9000, 8.48000, 57.60000, 51.900, 53.05000, ROOTMIN),
-                     age.max=c(126.5846, 27.31171, 92.31767, 145.626, 56.72119, ROOTMAX),
+                     age.min=c(51.9000, 8.48000, 57.60000, 51.900, 53.05000, 60.0),
+                     age.max=c(126.5846, 27.31171, 92.31767, 145.626, 56.72119, 72.0),
                      stringsAsFactors=FALSE)
 
 calibrated <- ape::chronos(phy = tree, calibration = calibs)
@@ -55,3 +56,5 @@ write.tree(phy = calibrated, file = "startingTree.newick")
 #[1] -0.4341425  1.0547216
 #> sphyraenidae.origin[2] # offset
 #[1] 53.05
+#> root_params$par # mean and sd
+#[1] 65.999915  3.061366
