@@ -72,7 +72,7 @@ spec="Alignment">
 <map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
-<run id="mcmc" spec="MCMC" chainLength="10000000">
+<run id="mcmc" spec="MCMC" chainLength="50000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:12S" spec="beast.evolution.tree.Tree" name="stateNode">
             <taxonset id="TaxonSet.12S" spec="TaxonSet">
@@ -757,7 +757,7 @@ filter="2798-3234"/>
         <up idref="ucldMean.c:12S"/>
         <down idref="Tree.t:12S"/>
     </operator>
-    <logger id="tracelog" spec="Logger" fileName="concatenated_posterior.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+    <logger id="tracelog" spec="Logger" fileName="concatenated_posterior.log" logEvery="5000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
@@ -832,12 +832,12 @@ filter="2798-3234"/>
         <log idref="latidae.prior"/>
         <log idref="sphyraenidae.prior"/>
     </logger>
-    <logger id="screenlog" spec="Logger" logEvery="1000">
+    <logger id="screenlog" spec="Logger" logEvery="5000">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
     </logger>
-    <logger id="treelog.t:12S" spec="Logger" fileName="concatenated_posterior.trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:12S" spec="Logger" fileName="concatenated_posterior.trees" logEvery="5000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:12S" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:TMO" tree="@Tree.t:12S"/>
     </logger>
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
