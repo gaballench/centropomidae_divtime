@@ -81,46 +81,16 @@ spec="Alignment">
                 </alignment>
             </taxonset>
         </tree>
-        <parameter id="rateAC.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAG.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAT.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCG.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateGT.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="proportionInvariant.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
         <parameter id="gammaShape.s:12S" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
-        <parameter id="rateCT.s:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="gammaShape.s:16S" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
-        <parameter id="rateAC.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAG.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAT.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCG.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateGT.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCT.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="gammaShape.s:COI" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
-        <parameter id="rateAC.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAG.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAT.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCG.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateGT.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="proportionInvariant.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
-        <parameter id="rateCT.s:COI" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="proportionInvariant.s:16S" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
         <parameter id="proportionInvariant.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
         <parameter id="gammaShape.s:CYTB" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
-        <parameter id="rateAC.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAG.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAT.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCG.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateGT.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCT.s:CYTB" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="proportionInvariant.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.1</parameter>
         <parameter id="gammaShape.s:TMO" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
-        <parameter id="rateAC.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAG.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateAT.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCG.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateGT.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
-        <parameter id="rateCT.s:TMO" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="ucldStdev.c:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
         <stateNode id="rateCategories.c:12S" spec="parameter.IntegerParameter" dimension="104">1</stateNode>
         <parameter id="ucldMean.c:16S" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
@@ -139,16 +109,63 @@ spec="Alignment">
         <parameter id="BDDeathRate.t:12S" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.5</parameter>
         <parameter id="ucldMean.c:12S" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
     </state>
-<!---    <init id="RandomTree.t:12S" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:12S" taxa="@12S">
-        <populationModel id="ConstantPopulation0.t:12S" spec="ConstantPopulation">
-            <parameter id="randomPopSize.t:12S" spec="parameter.RealParameter" name="popSize">1.0</parameter>
-        </populationModel>
-	</init>
--->
-    <init spec='beast.util.TreeParser' id='NewickTree.t:XYZ26' 
-        initial="@Tree.t:12S" taxa='@12S' IsLabelledNewick="true" 
-        newick="((((((Istiophorus_platypterus:19.48988588,Tetrapturus_audax:19.48988588):19.48959309,Makaira_nigricans:38.97947897):19.48727312,Xiphias_gladius:58.46675209):5.297392694,(((Coryphaena_equiselis:28.52420415,Echeneis_naucrates:28.52420415):28.5533628,(Gnathanodon_speciosus:52.73169945,Caranx_caninus:52.73169945):4.345867495):4.240894369,(((Centropomus_ensiferus:19.45911637,((Centropomus_armatus:6.487217907,Centropomus_robalito:6.487217907):6.490547953,Centropomus_unionensis:12.97776586):6.481350514):6.497610454,((Centropomus_pectinatus:8.648392859,Centropomus_medius:8.648392859):8.655008362,((((Centropomus_poeyi:2.946956117,(Centropomus_undecimalis:1.363438955,Centropomus_irae:1.363438955):1.583517162):1.372536012,Centropomus_viridis:4.319492129):1.448070024,Centropomus_nigrescens:5.767562153):5.775446855,(Centropomus_parallelus:5.759232139,Centropomus_mexicanus:5.759232139):5.78377687):5.760392212):8.653325607):33.10519102,((((Sphyraena_helleri:28.24114602,((Sphyraena_africana:9.41173858,(Sphyraena_japonica:4.704962786,(Sphyraena_acutipinnis:2.355491113,Sphyraena_waitii:2.355491113):2.349471674):4.706775794):9.417508724,Sphyraena_novaehollandiae:18.8292473):9.411898721):9.409861542,((Sphyraena_viridensis:12.55159469,Sphyraena_argentea:12.55159469):12.55138132,Sphyraena_idiastes:25.102976):12.54803156):9.423477456,(((Sphyraena_iburiensis:11.76706661,Sphyraena_chrysotaenia:11.76706661):11.76661874,Sphyraena_pinguis:23.53368535):11.76591463,(Sphyraena_obtusata:17.6502868,Sphyraena_flavicauda:17.6502868):17.64931318):11.77488504):9.259245829,(Sphyraena_putnamae:45.18651751,(((Sphyraena_picudilla:20.33013242,(Sphyraena_ensis:13.55559791,(Sphyraena_borealis:6.777814385,Sphyraena_guachancho:6.777814385):6.777783523):6.774534513):6.784533497,Sphyraena_forsteri:27.11466592):6.774266025,(Sphyraena_qenie:22.59249328,(Sphyraena_barracuda:11.29649843,Sphyraena_jello:11.29649843):11.29599485):11.29643866):11.29758557):11.14721334):2.728186993):2.256543472):2.445683467):6.032583951,((Hypopterus_macropterus:34.14655224,Psammoperca_waigiensis:34.14655224):33.3938807,((((Lates_angustifrons:13.65870332,Lates_microlepis:13.65870332):13.65887904,Lates_stappersii:27.31758235):13.65858899,Lates_niloticus:40.97617135):13.66029859,(Lates_calcarifer:27.31756954,Lates_japonicus:27.31756954):27.31890039):12.903963):2.256295795):0,Nematistius_pectoralis:69.79672873);
-"/>
+    <init id="NewickTree.t:XYZ26" spec="beast.util.TreeParser" IsLabelledNewick="true" initial="@Tree.t:12S" newick="((((((Istiophorus_platypterus:19.48988588,Tetrapturus_audax:19.48988588):19.48959309,Makaira_nigricans:38.97947897):19.48727312,Xiphias_gladius:58.46675209):5.297392694,(((Coryphaena_equiselis:28.52420415,Echeneis_naucrates:28.52420415):28.5533628,(Gnathanodon_speciosus:52.73169945,Caranx_caninus:52.73169945):4.345867495):4.240894369,(((Centropomus_ensiferus:19.45911637,((Centropomus_armatus:6.487217907,Centropomus_robalito:6.487217907):6.490547953,Centropomus_unionensis:12.97776586):6.481350514):6.497610454,((Centropomus_pectinatus:8.648392859,Centropomus_medius:8.648392859):8.655008362,((((Centropomus_poeyi:2.946956117,(Centropomus_undecimalis:1.363438955,Centropomus_irae:1.363438955):1.583517162):1.372536012,Centropomus_viridis:4.319492129):1.448070024,Centropomus_nigrescens:5.767562153):5.775446855,(Centropomus_parallelus:5.759232139,Centropomus_mexicanus:5.759232139):5.78377687):5.760392212):8.653325607):33.10519102,((((Sphyraena_helleri:28.24114602,((Sphyraena_africana:9.41173858,(Sphyraena_japonica:4.704962786,(Sphyraena_acutipinnis:2.355491113,Sphyraena_waitii:2.355491113):2.349471674):4.706775794):9.417508724,Sphyraena_novaehollandiae:18.8292473):9.411898721):9.409861542,((Sphyraena_viridensis:12.55159469,Sphyraena_argentea:12.55159469):12.55138132,Sphyraena_idiastes:25.102976):12.54803156):9.423477456,(((Sphyraena_iburiensis:11.76706661,Sphyraena_chrysotaenia:11.76706661):11.76661874,Sphyraena_pinguis:23.53368535):11.76591463,(Sphyraena_obtusata:17.6502868,Sphyraena_flavicauda:17.6502868):17.64931318):11.77488504):9.259245829,(Sphyraena_putnamae:45.18651751,(((Sphyraena_picudilla:20.33013242,(Sphyraena_ensis:13.55559791,(Sphyraena_borealis:6.777814385,Sphyraena_guachancho:6.777814385):6.777783523):6.774534513):6.784533497,Sphyraena_forsteri:27.11466592):6.774266025,(Sphyraena_qenie:22.59249328,(Sphyraena_barracuda:11.29649843,Sphyraena_jello:11.29649843):11.29599485):11.29643866):11.29758557):11.14721334):2.728186993):2.256543472):2.445683467):6.032583951,((Hypopterus_macropterus:34.14655224,Psammoperca_waigiensis:34.14655224):33.3938807,((((Lates_angustifrons:13.65870332,Lates_microlepis:13.65870332):13.65887904,Lates_stappersii:27.31758235):13.65858899,Lates_niloticus:40.97617135):13.66029859,(Lates_calcarifer:27.31756954,Lates_japonicus:27.31756954):27.31890039):12.903963):2.256295795):0,Nematistius_pectoralis:69.79672873); " taxa="@12S">
+        <taxonset id="TaxonSet.2" spec="TaxonSet">
+            <taxon id="Caranx_caninus" spec="Taxon"/>
+            <taxon id="Centropomus_armatus" spec="Taxon"/>
+            <taxon id="Centropomus_ensiferus" spec="Taxon"/>
+            <taxon id="Centropomus_medius" spec="Taxon"/>
+            <taxon id="Centropomus_nigrescens" spec="Taxon"/>
+            <taxon id="Centropomus_pectinatus" spec="Taxon"/>
+            <taxon id="Centropomus_robalito" spec="Taxon"/>
+            <taxon id="Centropomus_undecimalis" spec="Taxon"/>
+            <taxon id="Centropomus_unionensis" spec="Taxon"/>
+            <taxon id="Centropomus_viridis" spec="Taxon"/>
+            <taxon id="Coryphaena_equiselis" spec="Taxon"/>
+            <taxon id="Echeneis_naucrates" spec="Taxon"/>
+            <taxon id="Gnathanodon_speciosus" spec="Taxon"/>
+            <taxon id="Istiophorus_platypterus" spec="Taxon"/>
+            <taxon id="Lates_angustifrons" spec="Taxon"/>
+            <taxon id="Lates_calcarifer" spec="Taxon"/>
+            <taxon id="Lates_japonicus" spec="Taxon"/>
+            <taxon id="Lates_microlepis" spec="Taxon"/>
+            <taxon id="Lates_niloticus" spec="Taxon"/>
+            <taxon id="Lates_stappersii" spec="Taxon"/>
+            <taxon id="Makaira_nigricans" spec="Taxon"/>
+            <taxon id="Nematistius_pectoralis" spec="Taxon"/>
+            <taxon id="Psammoperca_waigiensis" spec="Taxon"/>
+            <taxon id="Sphyraena_africana" spec="Taxon"/>
+            <taxon id="Sphyraena_barracuda" spec="Taxon"/>
+            <taxon id="Sphyraena_borealis" spec="Taxon"/>
+            <taxon id="Sphyraena_ensis" spec="Taxon"/>
+            <taxon id="Sphyraena_forsteri" spec="Taxon"/>
+            <taxon id="Sphyraena_guachancho" spec="Taxon"/>
+            <taxon id="Sphyraena_helleri" spec="Taxon"/>
+            <taxon id="Sphyraena_iburiensis" spec="Taxon"/>
+            <taxon id="Sphyraena_japonica" spec="Taxon"/>
+            <taxon id="Sphyraena_jello" spec="Taxon"/>
+            <taxon id="Sphyraena_obtusata" spec="Taxon"/>
+            <taxon id="Sphyraena_picudilla" spec="Taxon"/>
+            <taxon id="Sphyraena_pinguis" spec="Taxon"/>
+            <taxon id="Sphyraena_putnamae" spec="Taxon"/>
+            <taxon id="Sphyraena_qenie" spec="Taxon"/>
+            <taxon id="Sphyraena_viridensis" spec="Taxon"/>
+            <taxon id="Tetrapturus_audax" spec="Taxon"/>
+            <taxon id="Xiphias_gladius" spec="Taxon"/>
+            <taxon id="Sphyraena_argentea" spec="Taxon"/>
+            <taxon id="Sphyraena_idiastes" spec="Taxon"/>
+            <taxon id="Sphyraena_novaehollandiae" spec="Taxon"/>
+            <taxon id="Sphyraena_chrysotaenia" spec="Taxon"/>
+            <taxon id="Sphyraena_flavicauda" spec="Taxon"/>
+            <taxon id="Centropomus_irae" spec="Taxon"/>
+            <taxon id="Centropomus_poeyi" spec="Taxon"/>
+            <taxon id="Centropomus_mexicanus" spec="Taxon"/>
+            <taxon id="Centropomus_parallelus" spec="Taxon"/>
+            <taxon id="Hypopterus_macropterus" spec="Taxon"/>
+            <taxon id="Sphyraena_acutipinnis" spec="Taxon"/>
+            <taxon id="Sphyraena_waitii" spec="Taxon"/>
+        </taxonset>
+    </init>
     <distribution id="posterior" spec="util.CompoundDistribution">
         <distribution id="prior" spec="util.CompoundDistribution">
             <distribution id="BirthDeath.t:12S" spec="beast.evolution.speciation.BirthDeathGernhard08Model" birthDiffRate="@BDBirthRate.t:12S" relativeDeathRate="@BDDeathRate.t:12S" tree="@Tree.t:12S"/>
@@ -198,186 +215,6 @@ spec="Alignment">
             <prior id="PropInvariantPrior.s:TMO" name="distribution" x="@proportionInvariant.s:TMO">
                 <Uniform id="Uniform.44" name="distr"/>
             </prior>
-            <prior id="RateACPrior.s:12S" name="distribution" x="@rateAC.s:12S">
-                <Gamma id="Gamma.35" name="distr">
-                    <parameter id="RealParameter.87" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.88" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateACPrior.s:16S" name="distribution" x="@rateAC.s:16S">
-                <Gamma id="Gamma.41" name="distr">
-                    <parameter id="RealParameter.99" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.100" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateACPrior.s:COI" name="distribution" x="@rateAC.s:COI">
-                <Gamma id="Gamma.47" name="distr">
-                    <parameter id="RealParameter.111" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.112" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateACPrior.s:CYTB" name="distribution" x="@rateAC.s:CYTB">
-                <Gamma id="Gamma.53" name="distr">
-                    <parameter id="RealParameter.123" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.124" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateACPrior.s:TMO" name="distribution" x="@rateAC.s:TMO">
-                <Gamma id="Gamma.59" name="distr">
-                    <parameter id="RealParameter.135" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.136" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateAGPrior.s:12S" name="distribution" x="@rateAG.s:12S">
-                <Gamma id="Gamma.36" name="distr">
-                    <parameter id="RealParameter.89" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.90" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateAGPrior.s:16S" name="distribution" x="@rateAG.s:16S">
-                <Gamma id="Gamma.42" name="distr">
-                    <parameter id="RealParameter.101" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.102" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateAGPrior.s:COI" name="distribution" x="@rateAG.s:COI">
-                <Gamma id="Gamma.48" name="distr">
-                    <parameter id="RealParameter.113" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.114" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateAGPrior.s:CYTB" name="distribution" x="@rateAG.s:CYTB">
-                <Gamma id="Gamma.54" name="distr">
-                    <parameter id="RealParameter.125" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.126" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateAGPrior.s:TMO" name="distribution" x="@rateAG.s:TMO">
-                <Gamma id="Gamma.60" name="distr">
-                    <parameter id="RealParameter.137" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.138" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateATPrior.s:12S" name="distribution" x="@rateAT.s:12S">
-                <Gamma id="Gamma.37" name="distr">
-                    <parameter id="RealParameter.91" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.92" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateATPrior.s:16S" name="distribution" x="@rateAT.s:16S">
-                <Gamma id="Gamma.43" name="distr">
-                    <parameter id="RealParameter.103" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.104" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateATPrior.s:COI" name="distribution" x="@rateAT.s:COI">
-                <Gamma id="Gamma.49" name="distr">
-                    <parameter id="RealParameter.115" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.116" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateATPrior.s:CYTB" name="distribution" x="@rateAT.s:CYTB">
-                <Gamma id="Gamma.55" name="distr">
-                    <parameter id="RealParameter.127" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.128" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateATPrior.s:TMO" name="distribution" x="@rateAT.s:TMO">
-                <Gamma id="Gamma.61" name="distr">
-                    <parameter id="RealParameter.139" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.140" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCGPrior.s:12S" name="distribution" x="@rateCG.s:12S">
-                <Gamma id="Gamma.38" name="distr">
-                    <parameter id="RealParameter.93" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.94" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCGPrior.s:16S" name="distribution" x="@rateCG.s:16S">
-                <Gamma id="Gamma.44" name="distr">
-                    <parameter id="RealParameter.105" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.106" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCGPrior.s:COI" name="distribution" x="@rateCG.s:COI">
-                <Gamma id="Gamma.50" name="distr">
-                    <parameter id="RealParameter.117" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.118" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCGPrior.s:CYTB" name="distribution" x="@rateCG.s:CYTB">
-                <Gamma id="Gamma.56" name="distr">
-                    <parameter id="RealParameter.129" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.130" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCGPrior.s:TMO" name="distribution" x="@rateCG.s:TMO">
-                <Gamma id="Gamma.62" name="distr">
-                    <parameter id="RealParameter.141" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.142" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCTPrior.s:12S" name="distribution" x="@rateCT.s:12S">
-                <Gamma id="Gamma.39" name="distr">
-                    <parameter id="RealParameter.95" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.96" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCTPrior.s:16S" name="distribution" x="@rateCT.s:16S">
-                <Gamma id="Gamma.45" name="distr">
-                    <parameter id="RealParameter.107" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.108" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCTPrior.s:COI" name="distribution" x="@rateCT.s:COI">
-                <Gamma id="Gamma.51" name="distr">
-                    <parameter id="RealParameter.119" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.120" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCTPrior.s:CYTB" name="distribution" x="@rateCT.s:CYTB">
-                <Gamma id="Gamma.57" name="distr">
-                    <parameter id="RealParameter.131" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.132" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateCTPrior.s:TMO" name="distribution" x="@rateCT.s:TMO">
-                <Gamma id="Gamma.63" name="distr">
-                    <parameter id="RealParameter.143" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.144" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateGTPrior.s:12S" name="distribution" x="@rateGT.s:12S">
-                <Gamma id="Gamma.40" name="distr">
-                    <parameter id="RealParameter.97" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.98" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateGTPrior.s:16S" name="distribution" x="@rateGT.s:16S">
-                <Gamma id="Gamma.46" name="distr">
-                    <parameter id="RealParameter.109" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.110" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateGTPrior.s:COI" name="distribution" x="@rateGT.s:COI">
-                <Gamma id="Gamma.52" name="distr">
-                    <parameter id="RealParameter.121" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.122" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateGTPrior.s:CYTB" name="distribution" x="@rateGT.s:CYTB">
-                <Gamma id="Gamma.58" name="distr">
-                    <parameter id="RealParameter.133" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.134" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
-            <prior id="RateGTPrior.s:TMO" name="distribution" x="@rateGT.s:TMO">
-                <Gamma id="Gamma.64" name="distr">
-                    <parameter id="RealParameter.145" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
-                    <parameter id="RealParameter.146" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
-                </Gamma>
-            </prior>
             <prior id="MeanRatePrior.c:12S" name="distribution" x="@ucldMean.c:12S">
                 <Uniform id="Uniform.50" name="distr" upper="Infinity"/>
             </prior>
@@ -425,8 +262,8 @@ spec="Alignment">
             </prior>
             <distribution id="carangidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="carangidae" spec="TaxonSet">
-                    <taxon id="Caranx_caninus" spec="Taxon"/>
-                    <taxon id="Gnathanodon_speciosus" spec="Taxon"/>
+                    <taxon id="Caranx_caninus1" spec="Taxon"/>
+                    <taxon id="Gnathanodon_speciosus1" spec="Taxon"/>
                 </taxonset>
                 <LogNormal id="LogNormalDistributionModel.0" name="distr" offset="51.9">
                     <parameter id="RealParameter.164" spec="parameter.RealParameter" estimate="false" name="M">3.5759607</parameter>
@@ -435,19 +272,19 @@ spec="Alignment">
             </distribution>
             <distribution id="centropomidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="centropomidae" spec="TaxonSet">
-                    <taxon id="Centropomus_armatus" spec="Taxon"/>
-                    <taxon id="Centropomus_ensiferus" spec="Taxon"/>
-                    <taxon id="Centropomus_irae" spec="Taxon"/>
-                    <taxon id="Centropomus_medius" spec="Taxon"/>
-                    <taxon id="Centropomus_mexicanus" spec="Taxon"/>
-                    <taxon id="Centropomus_nigrescens" spec="Taxon"/>
-                    <taxon id="Centropomus_parallelus" spec="Taxon"/>
-                    <taxon id="Centropomus_pectinatus" spec="Taxon"/>
-                    <taxon id="Centropomus_poeyi" spec="Taxon"/>
-                    <taxon id="Centropomus_robalito" spec="Taxon"/>
-                    <taxon id="Centropomus_undecimalis" spec="Taxon"/>
-                    <taxon id="Centropomus_unionensis" spec="Taxon"/>
-                    <taxon id="Centropomus_viridis" spec="Taxon"/>
+                    <taxon id="Centropomus_armatus1" spec="Taxon"/>
+                    <taxon id="Centropomus_ensiferus1" spec="Taxon"/>
+                    <taxon id="Centropomus_irae1" spec="Taxon"/>
+                    <taxon id="Centropomus_medius1" spec="Taxon"/>
+                    <taxon id="Centropomus_mexicanus1" spec="Taxon"/>
+                    <taxon id="Centropomus_nigrescens1" spec="Taxon"/>
+                    <taxon id="Centropomus_parallelus1" spec="Taxon"/>
+                    <taxon id="Centropomus_pectinatus1" spec="Taxon"/>
+                    <taxon id="Centropomus_poeyi1" spec="Taxon"/>
+                    <taxon id="Centropomus_robalito1" spec="Taxon"/>
+                    <taxon id="Centropomus_undecimalis1" spec="Taxon"/>
+                    <taxon id="Centropomus_unionensis1" spec="Taxon"/>
+                    <taxon id="Centropomus_viridis1" spec="Taxon"/>
                 </taxonset>
                 <LogNormal id="LogNormalDistributionModel.1" name="distr" offset="8.48">
                     <parameter id="RealParameter.166" spec="parameter.RealParameter" estimate="false" name="M">0.5441571</parameter>
@@ -456,10 +293,10 @@ spec="Alignment">
             </distribution>
             <distribution id="istiophoridae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="istiophoridae" spec="TaxonSet">
-                    <taxon id="Xiphias_gladius" spec="Taxon"/>
-                    <taxon id="Makaira_nigricans" spec="Taxon"/>
-                    <taxon id="Istiophorus_platypterus" spec="Taxon"/>
-                    <taxon id="Tetrapturus_audax" spec="Taxon"/>
+                    <taxon id="Xiphias_gladius1" spec="Taxon"/>
+                    <taxon id="Makaira_nigricans1" spec="Taxon"/>
+                    <taxon id="Istiophorus_platypterus1" spec="Taxon"/>
+                    <taxon id="Tetrapturus_audax1" spec="Taxon"/>
                 </taxonset>
                 <LogNormal id="LogNormalDistributionModel.2" name="distr" offset="57.6">
                     <parameter id="RealParameter.168" spec="parameter.RealParameter" estimate="false" name="M">1.775708</parameter>
@@ -468,14 +305,14 @@ spec="Alignment">
             </distribution>
             <distribution id="latidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="latidae" spec="TaxonSet">
-                    <taxon id="Hypopterus_macropterus" spec="Taxon"/>
-                    <taxon id="Psammoperca_waigiensis" spec="Taxon"/>
-                    <taxon id="Lates_angustifrons" spec="Taxon"/>
-                    <taxon id="Lates_calcarifer" spec="Taxon"/>
-                    <taxon id="Lates_japonicus" spec="Taxon"/>
-                    <taxon id="Lates_microlepis" spec="Taxon"/>
-                    <taxon id="Lates_niloticus" spec="Taxon"/>
-                    <taxon id="Lates_stappersii" spec="Taxon"/>
+                    <taxon id="Hypopterus_macropterus1" spec="Taxon"/>
+                    <taxon id="Psammoperca_waigiensis1" spec="Taxon"/>
+                    <taxon id="Lates_angustifrons1" spec="Taxon"/>
+                    <taxon id="Lates_calcarifer1" spec="Taxon"/>
+                    <taxon id="Lates_japonicus1" spec="Taxon"/>
+                    <taxon id="Lates_microlepis1" spec="Taxon"/>
+                    <taxon id="Lates_niloticus1" spec="Taxon"/>
+                    <taxon id="Lates_stappersii1" spec="Taxon"/>
                 </taxonset>
                 <LogNormal id="LogNormalDistributionModel.3" name="distr" offset="51.9">
                     <parameter id="RealParameter.170" spec="parameter.RealParameter" estimate="false" name="M">2.9310483</parameter>
@@ -498,8 +335,8 @@ spec="Alignment">
                     <taxon idref="Centropomus_undecimalis"/>
                     <taxon idref="Centropomus_unionensis"/>
                     <taxon idref="Centropomus_viridis"/>
-                    <taxon id="Coryphaena_equiselis" spec="Taxon"/>
-                    <taxon id="Echeneis_naucrates" spec="Taxon"/>
+                    <taxon id="Coryphaena_equiselis1" spec="Taxon"/>
+                    <taxon id="Echeneis_naucrates1" spec="Taxon"/>
                     <taxon idref="Gnathanodon_speciosus"/>
                     <taxon idref="Hypopterus_macropterus"/>
                     <taxon idref="Istiophorus_platypterus"/>
@@ -510,31 +347,31 @@ spec="Alignment">
                     <taxon idref="Lates_niloticus"/>
                     <taxon idref="Lates_stappersii"/>
                     <taxon idref="Makaira_nigricans"/>
-                    <taxon id="Nematistius_pectoralis" spec="Taxon"/>
+                    <taxon id="Nematistius_pectoralis1" spec="Taxon"/>
                     <taxon idref="Psammoperca_waigiensis"/>
-                    <taxon id="Sphyraena_acutipinnis" spec="Taxon"/>
-                    <taxon id="Sphyraena_africana" spec="Taxon"/>
-                    <taxon id="Sphyraena_argentea" spec="Taxon"/>
-                    <taxon id="Sphyraena_barracuda" spec="Taxon"/>
-                    <taxon id="Sphyraena_borealis" spec="Taxon"/>
-                    <taxon id="Sphyraena_chrysotaenia" spec="Taxon"/>
-                    <taxon id="Sphyraena_ensis" spec="Taxon"/>
-                    <taxon id="Sphyraena_flavicauda" spec="Taxon"/>
-                    <taxon id="Sphyraena_forsteri" spec="Taxon"/>
-                    <taxon id="Sphyraena_guachancho" spec="Taxon"/>
-                    <taxon id="Sphyraena_helleri" spec="Taxon"/>
-                    <taxon id="Sphyraena_iburiensis" spec="Taxon"/>
-                    <taxon id="Sphyraena_idiastes" spec="Taxon"/>
-                    <taxon id="Sphyraena_japonica" spec="Taxon"/>
-                    <taxon id="Sphyraena_jello" spec="Taxon"/>
-                    <taxon id="Sphyraena_novaehollandiae" spec="Taxon"/>
-                    <taxon id="Sphyraena_obtusata" spec="Taxon"/>
-                    <taxon id="Sphyraena_picudilla" spec="Taxon"/>
-                    <taxon id="Sphyraena_pinguis" spec="Taxon"/>
-                    <taxon id="Sphyraena_putnamae" spec="Taxon"/>
-                    <taxon id="Sphyraena_qenie" spec="Taxon"/>
-                    <taxon id="Sphyraena_viridensis" spec="Taxon"/>
-                    <taxon id="Sphyraena_waitii" spec="Taxon"/>
+                    <taxon id="Sphyraena_acutipinnis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_africana1" spec="Taxon"/>
+                    <taxon id="Sphyraena_argentea1" spec="Taxon"/>
+                    <taxon id="Sphyraena_barracuda1" spec="Taxon"/>
+                    <taxon id="Sphyraena_borealis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_chrysotaenia1" spec="Taxon"/>
+                    <taxon id="Sphyraena_ensis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_flavicauda1" spec="Taxon"/>
+                    <taxon id="Sphyraena_forsteri1" spec="Taxon"/>
+                    <taxon id="Sphyraena_guachancho1" spec="Taxon"/>
+                    <taxon id="Sphyraena_helleri1" spec="Taxon"/>
+                    <taxon id="Sphyraena_iburiensis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_idiastes1" spec="Taxon"/>
+                    <taxon id="Sphyraena_japonica1" spec="Taxon"/>
+                    <taxon id="Sphyraena_jello1" spec="Taxon"/>
+                    <taxon id="Sphyraena_novaehollandiae1" spec="Taxon"/>
+                    <taxon id="Sphyraena_obtusata1" spec="Taxon"/>
+                    <taxon id="Sphyraena_picudilla1" spec="Taxon"/>
+                    <taxon id="Sphyraena_pinguis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_putnamae1" spec="Taxon"/>
+                    <taxon id="Sphyraena_qenie1" spec="Taxon"/>
+                    <taxon id="Sphyraena_viridensis1" spec="Taxon"/>
+                    <taxon id="Sphyraena_waitii1" spec="Taxon"/>
                     <taxon idref="Tetrapturus_audax"/>
                     <taxon idref="Xiphias_gladius"/>
                 </taxonset>
@@ -579,7 +416,13 @@ spec="Alignment">
             <distribution id="treeLikelihood.12S" spec="ThreadedTreeLikelihood" data="@12S" tree="@Tree.t:12S">
                 <siteModel id="SiteModel.s:12S" spec="SiteModel" gammaCategoryCount="4" proportionInvariant="@proportionInvariant.s:12S" shape="@gammaShape.s:12S">
                     <parameter id="mutationRate.s:12S" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
-                    <substModel id="gtr.s:12S" spec="GTR" rateAC="@rateAC.s:12S" rateAG="@rateAG.s:12S" rateAT="@rateAT.s:12S" rateCG="@rateCG.s:12S" rateCT="@rateCT.s:12S" rateGT="@rateGT.s:12S">
+                    <substModel id="gtr.s:12S" spec="GTR">
+                        <parameter id="rateAC.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAC">1.0</parameter>
+                        <parameter id="rateAG.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAG">1.0</parameter>
+                        <parameter id="rateAT.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAT">1.0</parameter>
+                        <parameter id="rateCG.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCG">1.0</parameter>
+                        <parameter id="rateCT.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <parameter id="rateGT.s:12S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateGT">1.0</parameter>
                         <frequencies id="empiricalFreqs.s:12S" spec="Frequencies" data="@12S"/>
                     </substModel>
                 </siteModel>
@@ -597,7 +440,13 @@ data="@concatenated"
 filter="833-1401"/>
                 <siteModel id="SiteModel.s:16S" spec="SiteModel" gammaCategoryCount="4" proportionInvariant="@proportionInvariant.s:16S" shape="@gammaShape.s:16S">
                     <parameter id="mutationRate.s:16S" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
-                    <substModel id="gtr.s:16S" spec="GTR" rateAC="@rateAC.s:16S" rateAG="@rateAG.s:16S" rateAT="@rateAT.s:16S" rateCG="@rateCG.s:16S" rateCT="@rateCT.s:16S" rateGT="@rateGT.s:16S">
+                    <substModel id="gtr.s:16S" spec="GTR">
+                        <parameter id="rateAC.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAC">1.0</parameter>
+                        <parameter id="rateAG.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAG">1.0</parameter>
+                        <parameter id="rateAT.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAT">1.0</parameter>
+                        <parameter id="rateCG.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCG">1.0</parameter>
+                        <parameter id="rateCT.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <parameter id="rateGT.s:16S" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateGT">1.0</parameter>
                         <frequencies id="empiricalFreqs.s:16S" spec="Frequencies" data="@16S"/>
                     </substModel>
                 </siteModel>
@@ -615,7 +464,13 @@ data="@concatenated"
 filter="1402-2015"/>
                 <siteModel id="SiteModel.s:COI" spec="SiteModel" gammaCategoryCount="4" proportionInvariant="@proportionInvariant.s:COI" shape="@gammaShape.s:COI">
                     <parameter id="mutationRate.s:COI" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
-                    <substModel id="gtr.s:COI" spec="GTR" rateAC="@rateAC.s:COI" rateAG="@rateAG.s:COI" rateAT="@rateAT.s:COI" rateCG="@rateCG.s:COI" rateCT="@rateCT.s:COI" rateGT="@rateGT.s:COI">
+                    <substModel id="gtr.s:COI" spec="GTR">
+                        <parameter id="rateAC.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAC">1.0</parameter>
+                        <parameter id="rateAG.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAG">1.0</parameter>
+                        <parameter id="rateAT.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAT">1.0</parameter>
+                        <parameter id="rateCG.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCG">1.0</parameter>
+                        <parameter id="rateCT.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <parameter id="rateGT.s:COI" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateGT">1.0</parameter>
                         <frequencies id="empiricalFreqs.s:COI" spec="Frequencies" data="@COI"/>
                     </substModel>
                 </siteModel>
@@ -633,7 +488,13 @@ data="@concatenated"
 filter="2016-2797"/>
                 <siteModel id="SiteModel.s:CYTB" spec="SiteModel" gammaCategoryCount="4" proportionInvariant="@proportionInvariant.s:CYTB" shape="@gammaShape.s:CYTB">
                     <parameter id="mutationRate.s:CYTB" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
-                    <substModel id="gtr.s:CYTB" spec="GTR" rateAC="@rateAC.s:CYTB" rateAG="@rateAG.s:CYTB" rateAT="@rateAT.s:CYTB" rateCG="@rateCG.s:CYTB" rateCT="@rateCT.s:CYTB" rateGT="@rateGT.s:CYTB">
+                    <substModel id="gtr.s:CYTB" spec="GTR">
+                        <parameter id="rateAC.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAC">1.0</parameter>
+                        <parameter id="rateAG.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAG">1.0</parameter>
+                        <parameter id="rateAT.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAT">1.0</parameter>
+                        <parameter id="rateCG.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCG">1.0</parameter>
+                        <parameter id="rateCT.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <parameter id="rateGT.s:CYTB" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateGT">1.0</parameter>
                         <frequencies id="empiricalFreqs.s:CYTB" spec="Frequencies" data="@CYTB"/>
                     </substModel>
                 </siteModel>
@@ -651,7 +512,13 @@ data="@concatenated"
 filter="2798-3234"/>
                 <siteModel id="SiteModel.s:TMO" spec="SiteModel" gammaCategoryCount="4" proportionInvariant="@proportionInvariant.s:TMO" shape="@gammaShape.s:TMO">
                     <parameter id="mutationRate.s:TMO" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
-                    <substModel id="gtr.s:TMO" spec="GTR" rateAC="@rateAC.s:TMO" rateAG="@rateAG.s:TMO" rateAT="@rateAT.s:TMO" rateCG="@rateCG.s:TMO" rateCT="@rateCT.s:TMO" rateGT="@rateGT.s:TMO">
+                    <substModel id="gtr.s:TMO" spec="GTR">
+                        <parameter id="rateAC.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAC">1.0</parameter>
+                        <parameter id="rateAG.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAG">1.0</parameter>
+                        <parameter id="rateAT.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateAT">1.0</parameter>
+                        <parameter id="rateCG.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCG">1.0</parameter>
+                        <parameter id="rateCT.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <parameter id="rateGT.s:TMO" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateGT">1.0</parameter>
                         <frequencies id="empiricalFreqs.s:TMO" spec="Frequencies" data="@TMO"/>
                     </substModel>
                 </siteModel>
@@ -663,46 +530,16 @@ filter="2798-3234"/>
             </distribution>
         </distribution>
     </distribution>
-    <operator id="RateACScaler.s:12S" spec="ScaleOperator" parameter="@rateAC.s:12S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateAGScaler.s:12S" spec="ScaleOperator" parameter="@rateAG.s:12S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateATScaler.s:12S" spec="ScaleOperator" parameter="@rateAT.s:12S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCGScaler.s:12S" spec="ScaleOperator" parameter="@rateCG.s:12S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateGTScaler.s:12S" spec="ScaleOperator" parameter="@rateGT.s:12S" scaleFactor="0.5" weight="0.1"/>
     <operator id="proportionInvariantScaler.s:12S" spec="ScaleOperator" parameter="@proportionInvariant.s:12S" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:12S" spec="ScaleOperator" parameter="@gammaShape.s:12S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCTScaler.s:12S" spec="ScaleOperator" parameter="@rateCT.s:12S" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:16S" spec="ScaleOperator" parameter="@gammaShape.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateACScaler.s:16S" spec="ScaleOperator" parameter="@rateAC.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateAGScaler.s:16S" spec="ScaleOperator" parameter="@rateAG.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateATScaler.s:16S" spec="ScaleOperator" parameter="@rateAT.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCGScaler.s:16S" spec="ScaleOperator" parameter="@rateCG.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateGTScaler.s:16S" spec="ScaleOperator" parameter="@rateGT.s:16S" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCTScaler.s:16S" spec="ScaleOperator" parameter="@rateCT.s:16S" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:COI" spec="ScaleOperator" parameter="@gammaShape.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateACScaler.s:COI" spec="ScaleOperator" parameter="@rateAC.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateAGScaler.s:COI" spec="ScaleOperator" parameter="@rateAG.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateATScaler.s:COI" spec="ScaleOperator" parameter="@rateAT.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCGScaler.s:COI" spec="ScaleOperator" parameter="@rateCG.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateGTScaler.s:COI" spec="ScaleOperator" parameter="@rateGT.s:COI" scaleFactor="0.5" weight="0.1"/>
     <operator id="proportionInvariantScaler.s:COI" spec="ScaleOperator" parameter="@proportionInvariant.s:COI" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCTScaler.s:COI" spec="ScaleOperator" parameter="@rateCT.s:COI" scaleFactor="0.5" weight="0.1"/>
     <operator id="proportionInvariantScaler.s:16S" spec="ScaleOperator" parameter="@proportionInvariant.s:16S" scaleFactor="0.5" weight="0.1"/>
     <operator id="proportionInvariantScaler.s:CYTB" spec="ScaleOperator" parameter="@proportionInvariant.s:CYTB" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:CYTB" spec="ScaleOperator" parameter="@gammaShape.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateACScaler.s:CYTB" spec="ScaleOperator" parameter="@rateAC.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateAGScaler.s:CYTB" spec="ScaleOperator" parameter="@rateAG.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateATScaler.s:CYTB" spec="ScaleOperator" parameter="@rateAT.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCGScaler.s:CYTB" spec="ScaleOperator" parameter="@rateCG.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateGTScaler.s:CYTB" spec="ScaleOperator" parameter="@rateGT.s:CYTB" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCTScaler.s:CYTB" spec="ScaleOperator" parameter="@rateCT.s:CYTB" scaleFactor="0.5" weight="0.1"/>
     <operator id="proportionInvariantScaler.s:TMO" spec="ScaleOperator" parameter="@proportionInvariant.s:TMO" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:TMO" spec="ScaleOperator" parameter="@gammaShape.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateACScaler.s:TMO" spec="ScaleOperator" parameter="@rateAC.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateAGScaler.s:TMO" spec="ScaleOperator" parameter="@rateAG.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateATScaler.s:TMO" spec="ScaleOperator" parameter="@rateAT.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCGScaler.s:TMO" spec="ScaleOperator" parameter="@rateCG.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateGTScaler.s:TMO" spec="ScaleOperator" parameter="@rateGT.s:TMO" scaleFactor="0.5" weight="0.1"/>
-    <operator id="RateCTScaler.s:TMO" spec="ScaleOperator" parameter="@rateCT.s:TMO" scaleFactor="0.5" weight="0.1"/>
     <operator id="ucldStdevScaler.c:12S" spec="ScaleOperator" parameter="@ucldStdev.c:12S" scaleFactor="0.5" weight="3.0"/>
     <operator id="CategoriesRandomWalk.c:12S" spec="IntRandomWalkOperator" parameter="@rateCategories.c:12S" weight="10.0" windowSize="1"/>
     <operator id="CategoriesSwapOperator.c:12S" spec="SwapOperator" intparameter="@rateCategories.c:12S" weight="10.0"/>
@@ -767,46 +604,16 @@ filter="2798-3234"/>
         <log idref="treeLikelihood.TMO"/>
         <log idref="treeLikelihood.16S"/>
         <log idref="treeLikelihood.COI"/>
-        <log idref="rateAC.s:12S"/>
-        <log idref="rateAG.s:12S"/>
-        <log idref="rateAT.s:12S"/>
-        <log idref="rateCG.s:12S"/>
-        <log idref="rateGT.s:12S"/>
         <log idref="proportionInvariant.s:12S"/>
         <log idref="gammaShape.s:12S"/>
-        <log idref="rateCT.s:12S"/>
         <log idref="gammaShape.s:16S"/>
-        <log idref="rateAC.s:16S"/>
-        <log idref="rateAG.s:16S"/>
-        <log idref="rateAT.s:16S"/>
-        <log idref="rateCG.s:16S"/>
-        <log idref="rateGT.s:16S"/>
-        <log idref="rateCT.s:16S"/>
         <log idref="gammaShape.s:COI"/>
-        <log idref="rateAC.s:COI"/>
-        <log idref="rateAG.s:COI"/>
-        <log idref="rateAT.s:COI"/>
-        <log idref="rateCG.s:COI"/>
-        <log idref="rateGT.s:COI"/>
         <log idref="proportionInvariant.s:COI"/>
-        <log idref="rateCT.s:COI"/>
         <log idref="proportionInvariant.s:16S"/>
         <log idref="proportionInvariant.s:CYTB"/>
         <log idref="gammaShape.s:CYTB"/>
-        <log idref="rateAC.s:CYTB"/>
-        <log idref="rateAG.s:CYTB"/>
-        <log idref="rateAT.s:CYTB"/>
-        <log idref="rateCG.s:CYTB"/>
-        <log idref="rateGT.s:CYTB"/>
-        <log idref="rateCT.s:CYTB"/>
         <log idref="proportionInvariant.s:TMO"/>
         <log idref="gammaShape.s:TMO"/>
-        <log idref="rateAC.s:TMO"/>
-        <log idref="rateAG.s:TMO"/>
-        <log idref="rateAT.s:TMO"/>
-        <log idref="rateCG.s:TMO"/>
-        <log idref="rateGT.s:TMO"/>
-        <log idref="rateCT.s:TMO"/>
         <log idref="ucldStdev.c:12S"/>
         <log id="rate.c:12S" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:12S" tree="@Tree.t:12S"/>
         <log idref="ucldMean.c:16S"/>
@@ -838,7 +645,7 @@ filter="2798-3234"/>
         <log idref="prior"/>
     </logger>
     <logger id="treelog.t:12S" spec="Logger" fileName="concatenated_posterior.trees" logEvery="5000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:12S" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:TMO" tree="@Tree.t:12S"/>
+        <log id="TreeWithMetaDataLogger.t:12S" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:CYTB" tree="@Tree.t:12S"/>
     </logger>
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
 </run>
