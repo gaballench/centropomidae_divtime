@@ -396,17 +396,18 @@ spec="Alignment">
                     <parameter id="RealParameter.79" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
                 </Gamma>
             </prior>
-<!--            <distribution id="carangidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
+            <distribution id="carangidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="carangidae" spec="TaxonSet">
                     <taxon id="Caranx_caninus" spec="Taxon"/>
                     <taxon id="Gnathanodon_speciosus" spec="Taxon"/>
                 </taxonset>
-                <LogNormal id="LogNormalDistributionModel.0" name="distr" offset="51.9">
+<!--                <LogNormal id="LogNormalDistributionModel.0" name="distr" offset="51.9">
                     <parameter id="RealParameter.86" spec="parameter.RealParameter" estimate="false" name="M">3.5759607</parameter>
                     <parameter id="RealParameter.87" spec="parameter.RealParameter" estimate="false" lower="0.0" name="S" upper="5.0">0.4483266</parameter>
-                </LogNormal>
-		</distribution>
+                    </LogNormal>
 -->
+		</distribution>
+
             <distribution id="centropomidae.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:12S">
                 <taxonset id="centropomidae" spec="TaxonSet">
                     <taxon id="Centropomus_armatus" spec="Taxon"/>
