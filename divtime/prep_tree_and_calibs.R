@@ -58,3 +58,18 @@ write.tree(phy = calibrated, file = "startingTree.newick")
 #[1] 53.05
 #> root_params$par # mean and sd
 #[1] 65.999915  3.061366
+
+### calibrations using the truncated cauchy from mcmctree
+# using the c_truncauchy which I developed for the dating_1kite project
+#> c_truncauchy(tl=0.51900, tr=1.265846, p=0.1, pr=0.975, al=0.025)
+#[1] 0.08398711
+#> c_truncauchy(tl=0.08480, tr=0.273117, p=0.1, pr=0.975, al=0.025)
+#[1] 0.1227303
+#> c_truncauchy(tl=0.57600, tr=0.923177, p=0.1, pr=0.975, al=0.025)
+#[1] 0.03609402
+#> c_truncauchy(tl=0.51900, tr=1.45626, p=0.1, pr=0.975, al=0.025)
+#[1] 0.1026201
+#> c_truncauchy(tl=0.53050, tr=0.567212, p=0.1, pr=0.975, al=0.025)
+#[1] 8.387935e-09
+#> c_truncauchy(tl=0.6, tr=0.72, p=0.1, pr=0.975, al=0.025)
+#[1] 0.007870172
