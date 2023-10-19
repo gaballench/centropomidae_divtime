@@ -1,3 +1,6 @@
+# graveyard of discarded divtime analyses but whose contents I want to keep for future reference
+divtime/graveyard/*
+
 # Wang script because it is already available form the original publication
 Wang2016_ABM_2.R
 
