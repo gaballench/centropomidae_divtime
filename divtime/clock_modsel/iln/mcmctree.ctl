@@ -1,6 +1,6 @@
 seed = -1
-seqfile = ../../phylips/concatenated.phylip
-treefile = ../../startingTree.phylip
+seqfile = ../../../phylips/concatenated.phylip
+treefile = ../../../startingTree.phylip
 outfile = out
 
 ndata = 5      * number of partitions
