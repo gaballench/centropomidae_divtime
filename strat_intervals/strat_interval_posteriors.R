@@ -103,11 +103,28 @@ plot(lognormalBeast(M=latidae_params$par[1], S=latidae_params$par[2], offset=lat
 
 plot(lognormalBeast(M=sphyraenidae_params$par[1], S=sphyraenidae_params$par[2], offset=sphyraenidae.origin[2], meanInRealSpace=FALSE, from=0, to=150))
 
+##### plot the strat series plus the posterior on the origin
+
+carangidae.origin.post <- abm38.v2(x=carangidae$Mean.age, distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+centropomidae.origin.post <- abm38.v2(x=centropomidae$Mean.age, distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+centropomidae_uniques.origin.post <- abm38.v2(x=unique(centropomidae$Mean.age), distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+istiophoridae.origin.post <- abm38.v2(x=istiophoridae$Mean.age, distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+latidae.origin.post <- abm38.v2(x=latidae$Mean.age, distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+sphyraenidae.origin.post <- abm38.v2(x=sphyraenidae$midpoint_ma, distance=FALSE, ext=FALSE, base=0.0, conf=0.95,PLOT=FALSE, post_values=TRUE)
+
 # plot the posteriors to be used as calibration priors
 # NOTE: these require post_values=TRUE in the preceding block
-#plot(centropomidae_uniques.origin, xlim=c(0,150), ylim=c(0,0.18), type="l")
-#lines(carangidae.origin, col="green")
-#lines(istiophoridae.origin, col="red")
-#lines(latidae.origin, col="blue")
-#lines(sphyraenidae.origin, col="yellow")
-#legend(x="topright", legend=c("Centropomidae", "Carangidae", "Istiophoridae", "Latidae", "Sphyraenidae"), lty=1, col=c("black", "green", "red", "blue", "yellow"))
+# further manipulations to be done by hand using inkscape
+pdf(file="strat_series.pdf", width=7, height=3.5*5)
+par(mfrow=c(5,1))
+plot(centropomidae_uniques.origin.post, xlim=c(0,150), type="l", lwd=1.5)
+points(y=rep(0, length(unique(centropomidae$Mean.age))), x=unique(centropomidae$Mean.age), pch=21, bg="gray", cex=1.5)
+plot(carangidae.origin.post, xlim=c(0,150), type="l", lwd=1.5)
+points(y=rep(0, length(carangidae$Mean.age)), x=carangidae$Mean.age, pch=21, bg="gray", cex=1.5)
+plot(istiophoridae.origin.post, xlim=c(0,150), type="l", lwd=1.5)
+points(y=rep(0, length(istiophoridae$Mean.age)), x=istiophoridae$Mean.age, pch=21, bg="gray", cex=1.5)
+plot(latidae.origin.post, xlim=c(0,150), type="l", lwd=1.5)
+points(y=rep(0, length(latidae$Mean.age)), x=latidae$Mean.age, pch=21, bg="gray", cex=1.5)
+plot(sphyraenidae.origin.post, xlim=c(0,150), type="l", lwd=1.5)
+points(y=rep(0, length(sphyraenidae$midpoint_ma)), x=sphyraenidae$midpoint_ma, pch=21, bg="gray", cex=1.5)
+dev.off()
