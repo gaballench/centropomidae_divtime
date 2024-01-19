@@ -1,5 +1,7 @@
 # centropomidae_divtime
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10535162.svg)](https://doi.org/10.5281/zenodo.10535162)
+
 Code and data for the phylogenetic analysis and divergence time estimation in Biogeographic history and divergence events of the Snooks and Barracudas (Carangiformes): Evolution and Divergence spanning the closure of the Panama Isthmus (Ossa-Hernández, Ballen, Acero-P, & Tavera, 2024).
 
 This repository has the following structure:
