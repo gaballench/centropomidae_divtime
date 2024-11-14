@@ -1,9 +1,7 @@
 library(ape)
 library(tbea)
 
-tree <- read.nexus("../mrbayes/posterior_maxcred.tre")
-
-tree <- root(phy=tree, outgroup="Nematistius_pectoralis", resolve.root=TRUE)
+tree <- read.tree("../divtime/secondmaxpostprob.phylip")
 
 # determine the node IDs to calibrate
 carangidae_id <- mrca(tree)["Gnathanodon_speciosus", "Caranx_caninus"]
@@ -12,6 +10,9 @@ istiophoridae_id <- mrca(tree)["Xiphias_gladius", "Istiophorus_platypterus"]
 latidae_id <- mrca(tree)["Lates_japonicus", "Hypopterus_macropterus"]
 sphyraenidae_id <- mrca(tree)["Sphyraena_jello", "Sphyraena_helleri"]
 root_id <- mrca(tree)["Nematistius_pectoralis", "Sphyraena_waitii"]
+
+write.tree(makeNodeLabel(tree, "number"))
+plot.phylo(makeNodeLabel(tree, "number"),show.node.label=T)
 
 ### the calibrations need to be consistent with the following min-max intervals, from ../strat_intervals/strat_interval_posteriors.R
 #> carangidae.origin[c(2,3)] # min-max for init tree
@@ -59,8 +60,8 @@ write.tree(phy = calibrated, file = "startingTree.newick")
 #> root_params$par # mean and sd
 #[1] 65.999915  3.061366
 
-### calibrations using the truncated cauchy from mcmctree
-# using the c_truncauchy which I developed for the dating_1kite project
+## calibrations using the truncated cauchy from mcmctree
+# using the c_truncauchy from the tbea package
 #> c_truncauchy(tl=0.51900, tr=1.265846, p=0.1, pr=0.975, al=0.025)
 #[1] 0.08398711
 #> c_truncauchy(tl=0.08480, tr=0.273117, p=0.1, pr=0.975, al=0.025)

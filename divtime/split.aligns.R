@@ -1,11 +1,11 @@
-taxa <- read.csv("taxa.tsv", header=FALSE)
-seqs <- read.csv("concatenated.tsv", header=FALSE)
+taxa <- read.csv("taxa.csv", header=FALSE)
+seqs <- read.csv("conc.csv", header=FALSE)
 
-ch_12S <- c(1,832)
-ch_16S <- c(833,1401)
-ch_COI <- c(1402,2015)
-ch_CYTB <- c(2016,2797)
-ch_TMO <- c(2798,3234)
+ch_12S <- c(1,803)
+ch_16S <- c(804,1393)
+ch_COI <- c(1394,2006)
+ch_CYTB <- c(2007,2781)
+ch_TMO <- c(2782,3215)
 
 phylip_12S <- data.frame(taxa, "  ", seqs[,ch_12S[1]:ch_12S[2]])
 phylip_16S <- data.frame(taxa, "  ", seqs[,ch_16S[1]:ch_16S[2]])

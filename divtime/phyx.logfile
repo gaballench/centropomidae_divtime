@@ -1,0 +1,4 @@
+pxs2phy concatenated.nexus
+pxs2phy -s concatenated.nexus -o concatenated.phylip
+pxs2phy -s ../mrbayesconcatenated.nexus -o concatenated.phylip
+pxs2phy -s ../mrbayes/concatenated.nexus -o concatenated.phylip

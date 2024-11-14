@@ -1,66 +1,66 @@
 
-        53         84  P
+        53         81  P
 
-Caranx_caninus                  ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Centropomus_armatus             AAAAAAAAAA AAAAAAAAAA AACCCCCCCC CCCCCCCCCC CGGGGGGGGG GGGGGGGGGG GGGGGGGGGT TTTTTTTTTT TTTT
-Centropomus_ensiferus           AAAAAAAAAA AAAAAAAAAG GTCCCCCCCC CCCCCCCCCC GACGGGGGGG GGGGGGGGGG GGGGGGGGGT TTTTTTTTTT TTTT
-Centropomus_medius              AAAAAAAAAA AAAAAAGGGG GACCCCCCCC CCCCCCCCCT GACAAGGGGG GGGGGGGGGG GGGGGGGGGC TTTTTTTTTT TTTT
-Centropomus_nigrescens          AAAAAAAAAA AAAAAGAGGA GACCCCCCCC CCCCCCCCCC GACGGAGGGG GGGGGGGGGG GGGGGGGGGC TTTTTTTTTT TTTT
-Centropomus_pectinatus          AAAAAAAAAA AAAAAAGGGG GACCCCCCCC CCCCCCCCCT GACAAGCGGG GGGGGGGGGG GGGGGGGGGC TTTTTTTTTT TTTT
-Centropomus_robalito            ---AAAAAAA AAAAAAA-AA GA------CC CCCCCCCCCC GAGGGGG--- ----GGGGGG GGGGGGGGGT ---TTTTTTT TTTT
-Centropomus_undecimalis         ---AAAAAAA AAAAAGA-GA GA------CC CCCCCCCCCC GACGGAG--- -----GGGGG GGGGGGGGGC ----CTTTTT TTTT
-Centropomus_unionensis          AAAAAAAAAA AAAAAAAAAA GACCCCCCCC CCCCCCCCTC GAGGGGGGGG GGGGGGGGGG GGGGGGGGGT TTTTTTTTTT TTTT
-Centropomus_viridis             ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Coryphaena_equiselis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Echeneis_naucrates              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Gnathanodon_speciosus           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Istiophorus_platypterus         AAGAAAAAAA AAAGGAAGAA AAACCCGTCC CCCCGTTTCT GACGGGGCGG GGGGGAAAAC GGGGGGGGTC ACTTTACCCC TTTT
-Lates_angustifrons              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Lates_calcarifer                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Lates_japonicus                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Lates_microlepis                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Lates_niloticus                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Lates_stappersii                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Makaira_nigricans               AAGAAAAAAA AAAGGAAGAA AAACCCGTCC CCCCGTTTCT GACGGGGCGG GGGGGAAAAC GGGGGGGGTC ATTTTACCCT TTTT
-Nematistius_pectoralis          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Psammoperca_waigiensis          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_africana              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_barracuda             AAAAAAAAAC GGTAAAGGAA GACCCCCCCC CTTTGCTTCT GACGGGGGAG GGGGGAAGGG AAGGGGGTGC TTTTTTCTTT ACTT
-Sphyraena_borealis              AAAAAAAAAC GGTAAAGGAA GACCCTCCCC TTTTGCTTCT GACGGGGGAG GGGGGAAGGG AAAGGGGTGC TTTTTTCTTT ACTT
-Sphyraena_ensis                 ATAAAAAAAC GGTAAAGGAA GACCCTCCCC TTTTGCTTCT GACGGGGGAA GGGGGAAAGG AAAGGGGTGC TTTTTTCTTT ACTT
-Sphyraena_forsteri              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_guachancho            AAAAAAAAAC GGTAAAGGAA GACCCTCCCC TTTTGCTTCT GACGGGGGAG GGGGGAAGGG AAAGGGGTGC TTTTTTCTTT ACTT
-Sphyraena_helleri               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_iburiensis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_japonica              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_jello                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_obtusata              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_picudilla             ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_pinguis               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_putnamae              AAA-AAAAGC GGTAAAGAGA GAACCCCC-C CTTTGCTTCT GAC-GGGGAG ACGGGAAGGG AAG-AGG-GT TTTTTTCTTT GC-T
-Sphyraena_qenie                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_viridensis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Tetrapturus_audax               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Xiphias_gladius                 AAAAAACGAA AAAAGAGGAG GACCTCCTCC CCCTGCTTCC GACAGGGCGG GGGGGAAGAG GGGGGAGGGC TTTTTTCCTT TTTT
-Sphyraena_argentea              AAAAAGAAAC AGTAAAGAAA ATCCCCTCCC CCTTGCCTCC GACGGGGGGG GGAGGATAGG AGGGGGGTGT TTTTTTCTTT TCTT
-Sphyraena_idiastes              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_novaehollandiae       ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_chrysotaenia          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_flavicauda            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Centropomus_irae                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Centropomus_poeyi               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Centropomus_mexicanus           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Centropomus_parallelus          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Hypopterus_macropterus          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_acutipinnis           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
-Sphyraena_waitii                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----
+Caranx_caninus                  ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Centropomus_armatus             AAAAAAAAAA AAAAAAAAAA AACCCCCCCC CCCCCCCCCC CGGGGGGGGG GGGGGGGGGG GGGGGGGTTT TTTTTTTTTT T
+Centropomus_ensiferus           AAAAAAAAAA AAAAAAAAAG GTCCCCCCCC CCCCCCCCCC GACGGGGGGG GGGGGGGGGG GGGGGGGTTT TTTTTTTTTT T
+Centropomus_medius              AAAAAAAAAA AAAAAAGGGG GACCCCCCCC CCCCCCCCCT GACAAGGGGG GGGGGGGGGG GGGGGGGCTT TTTTTTTTTT T
+Centropomus_nigrescens          AAAAAAAAAA AAAAAGAGGA GACCCCCCCC CCCCCCCCCC GACGGAGGGG GGGGGGGGGG GGGGGGGCTT TTTTTTTTTT T
+Centropomus_parallelus          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Centropomus_pectinatus          AAAAAAAAAA AAAAAAGGGG GACCCCCCCC CCCCCCCCCT GACAAGCGGG GGGGGGGGGG GGGGGGGCTT TTTTTTTTTT T
+Centropomus_robalito            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Centropomus_undecimalis         ---AAAAAAA AAAAAGAGGA GA------CC CCCCCCCCCC GACGGAG--- ---CGGGGGG GGGGGGGC-- -CTTTTTTTT T
+Centropomus_unionensis          AAAAAAAAAA AAAAAAAAAA GACCCCCCCC CCCCCCCCTC GAGGGGGGGG GGGGGGGGGG GGGGGGGTTT TTTTTTTTTT T
+Centropomus_viridis             ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Coryphaena_equiselis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Echeneis_naucrates              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Gnathanodon_speciosus           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Istiophorus_platypterus         AAGAAAAAAA AAAGGAAAGA AAACCCGTCC CCCCGTTTCT GACGGGGCGG GGGGAAAACG GGGGGGTCAC TTACCCCTTT T
+Lates_angustifrons              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Lates_calcarifer                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Lates_japonicus                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Lates_microlepis                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Lates_niloticus                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Lates_stappersii                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Makaira_nigricans               AAGAAAAAAA AAAGGAAAGA AAACCCGTCC CCCCGTTTCT GACGGGGCGG GGGGAAAACG GGGGGGTCAT TTACCCTTTT T
+Nematistius_pectoralis          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Psammoperca_waigiensis          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_africana              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_barracuda             AAAAAAAAAC GGTAAAGAGA GACCCCCCCC CTTTGCTTCT GACGGGGGAG GGGGAAGGGA AGGGGGGCTT TTTCTTTACT T
+Sphyraena_borealis              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_ensis                 -AAAAAAAAC GGTAAAGAGA GACCCTCCCC TTTTGCTTCT GACGGGGGAG GGGGAAAGGA AAGGGGGCTT TTTCTTTACT T
+Sphyraena_forsteri              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_guachancho            AAAAAAAAAC GGTAAAGAGA GACCCTCCCC TTTTGCTTCT GACGGGGGAG GGGGAAGGGA AAGGGGGCTT TTTCTTTACT T
+Sphyraena_helleri               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_iburiensis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_japonica              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_jello                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_obtusata              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_pinguis               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_putnamae              AAA-AAAAGC GGTAAAGGAA GAACCCCC-C CTTTGCTTCT GAC-GGGGAA CGGGAAGGGA AG-AGGGTTT TTTCTTTGC- T
+Sphyraena_qenie                 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_sphyraena             ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_viridensis            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Tetrapturus_audax               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Xiphias_gladius                 AAAAAACGAA AAAAGAGAGG GACCTCCTCC CCCTGCTTCC GACAGGGCGG GGGGAAGAGG GGGGAGGCTT TTTCCTTTTT T
+Centropomus_irae                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Centropomus_mexicanus           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Centropomus_poeyi               ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_argentea              AAAAAGAAAC AGTAAAGAAA ATCCCCTCCC CCTTGCCTCC GACGGGGGGG GAGGATAGGA GGGGGGGTTT TTTCTTTTCT T
+Sphyraena_chrysotaenia          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_flavicauda            ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_idiastes              ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_novaehollandiae       ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Hypopterus_macropterus          ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_acutipinnis           ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
+Sphyraena_waitii                ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -
 
 
 
-   17    1    2    4   87    1    1    1    1    2    1    1    1    1    1
+    1   11    2    4   93    1    1    1    1    2    1    1    1    1    1
     1    1    1    1    1    1    1    1    5    1    1    1    1    1   56
     1    1    1    1    1    4    1    1    1    1    1    1    1    1    1
-    1    1    1    1    1    1    1    1    5    1    2    1    1    1    1
-    1    1    1    8    1    1   78    1    1    1    1    1    6    1    1
-    1    2    1    2    1    1    1    7   83
+    1    1    1    1    1    1    1    4    1    2    1    1    1    1    1
+    1    1    7    1    1   79    1    1    1    1    4    1    1    2    1
+    2    1    1    1    7   86
 

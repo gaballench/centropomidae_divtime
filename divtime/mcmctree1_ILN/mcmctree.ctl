@@ -1,6 +1,6 @@
           seed = -1
        seqfile = ../phylips/concatenated.phylip
-      treefile = ../startingTree.phylip
+      treefile = ../secondmaxpostprob_calibrated.phylip
       mcmcfile = mcmc.txt
        outfile = out.txt
 

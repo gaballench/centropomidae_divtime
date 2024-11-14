@@ -1,0 +1,20 @@
+pxlog -t concatenated.nexus.run1.t concatenated.nexus.run2.t concatenated.nexus.run3.t concatenated.nexus.run4.t -b 750000 -o combined.trees
+pxrr -t maxcred_tree.tre -g Nematistius_pectoralis
+pxrr -t maxcred_tree.tre -g Nematistius_pectoralis -o maxcred_tree_rooted.tre
+pxrr --help
+pxrr -t secondmaxpostprob.tre -o Nematistius_pectoralis
+pxrr -t secondmaxpostprob.tre -o Nematistius_pectoralis
+pxt2new -o secondmaxpostprob.phylip
+pxrr -t secondmaxpostprob.tre -g Nematistius_pectoralis
+pxt2new -o secondmaxpostprob.phylip
+pxrr -h
+pxrr -f combined.trees -g Nematistius_pectoralis
+pxrr -t combined.trees -g Nematistius_pectoralis -o combined_rerooted.trees
+pxrr -t secondmaxpostprob.tre -g Nematistius_pectoralis -o secondmaxpostprob_rerooted.tre
+pxrr -g Nmatistius_pectoralis -o combined_rerooted.newick
+pxt2new -t combined.trees
+pxrr -g Nematistius_pectoralis -o combined_rerooted.newick
+pxt2new -t combined.trees
+pxt2new -t secondmaxpostprob.tre
+pxrr -g Nematistius_pectoralis -o secondmaxpostprob.newick
+pxt2nex -t combined_rerooted.newick -o combined_rerooted2.nexus
